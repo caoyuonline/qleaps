@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shor 算法 - 量子跃迁</title>
+     <meta name="description" content="深入了解 Shor 算法的原理和应用。学习该算法如何利用量子特性高效分解大数，对现代密码学构成潜在威胁。">
+    <meta name="keywords" content="Shor算法, 量子计算, 分解大数, 量子傅里叶变换, 量子密码学, RSA加密">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-blue-600">量子跃迁</span>
+                    </div>
+                    <div class="hidden md:ml-6 md:flex md:space-x-8">
+                        <a href="index.html" class="border-b-2 border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
+                            首页
+                        </a>
+                        <a href="basic-knowledge-list.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
+                            基础知识
+                        </a>
+                        <a href="quantum-applications-list.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
+                            前沿技术
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
+                            学习资源
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-8">Shor 算法</h1>
+        <p class="text-gray-700 mb-4">
+            Shor 算法是量子计算领域最著名的算法之一，由 Peter Shor 于 1994 年提出。该算法能够利用量子特性高效地分解大数。
+        </p>
+
+        <div class="bg-white rounded-lg shadow p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Shor 算法的历史背景</h2>
+            <p class="text-gray-700 mb-4">
+               在经典计算机上，分解大数是一个非常困难的问题，其计算时间随着数字大小呈指数增长。然而，Shor 算法证明，量子计算机可以利用量子傅里叶变换等技术在多项式时间内完成大数分解。
+            </p>
+             <p class="text-gray-700 mb-4">
+                  这一发现对现代密码学产生了巨大的冲击，因为许多现代加密算法（如 RSA）的安全性依赖于大数分解的难度。
+              </p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 mb-8">
+             <h2 class="text-2xl font-semibold text-gray-800 mb-4">Shor 算法的原理</h2>
+                <p class="text-gray-700 mb-4">
+                     Shor 算法主要包括以下步骤：
+                 </p>
+              <ul class="list-disc pl-6 text-gray-700 mb-4">
+                    <li>
+                         <strong>量子傅里叶变换 (QFT)：</strong> 用于发现函数的周期性。
+                      </li>
+                      <li>
+                        <strong>模幂运算：</strong> 将输入的数字进行模幂运算，得到一系列的数值。
+                     </li>
+                     <li>
+                      <strong>周期查找：</strong> 利用 QFT 分析模幂运算的结果，找到周期性。
+                    </li>
+                     <li>
+                         <strong>因数提取：</strong> 基于找到的周期，提取数字的因数。
+                      </li>
+              </ul>
+              <p class="text-gray-700 mb-4">
+                 Shor 算法的核心在于利用量子傅里叶变换来高效地找到模幂运算的周期，而这在经典计算机上是非常困难的。
+              </p>
+        </div>
+         <div class="bg-white rounded-lg shadow p-6 mb-8">
+           <h2 class="text-2xl font-semibold text-gray-800 mb-4">Shor 算法的应用</h2>
+             <p class="text-gray-700 mb-4">
+                 Shor 算法最著名的应用就是它可以破解目前广泛使用的 RSA 加密算法。
+             </p>
+             <p class="text-gray-700 mb-4">
+               RSA 算法的安全性依赖于分解大数的难度，而 Shor 算法在理论上可以高效地分解 RSA 使用的大数，使得 RSA 加密不再安全。
+             </p>
+              <p class="text-gray-700 mb-4">
+                  这意味着，一旦可用的量子计算机足够强大，Shor 算法将会对互联网安全带来严重威胁。
+               </p>
+         </div>
+            <div class="bg-white rounded-lg shadow p-6 mb-8">
+               <h2 class="text-2xl font-semibold text-gray-800 mb-4">Shor 算法的未来</h2>
+              <p class="text-gray-700 mb-4">
+                 由于其在密码学领域的影响，Shor 算法的研究也推动了量子密码学的发展，例如量子密钥分发等技术。
+              </p>
+             <p class="text-gray-700 mb-4">
+                 此外，研究人员也正在探索新的量子算法，以解决更多经典计算机难以处理的问题。
+             </p>
+          </div>
+           <div class="bg-white rounded-lg shadow p-6 mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">拓展阅读</h2>
+                 <p class="text-gray-700 mb-4">
+                      您可以通过以下链接查看更多关于 Shor 算法的信息：
+                   </p>
+                      <ul class="list-disc pl-6 text-gray-700 mb-4">
+                             <li>
+                             <a href="quantum-algorithms-list.html" class="text-blue-600 hover:text-blue-800">
+                                 量子密码学
+                             </a>
+                        </li>
+                    </ul>
+            </div>
+    </div>
+</body>
+</html>
