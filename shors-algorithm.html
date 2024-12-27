@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shor 算法 - 量子跃迁</title>
-     <meta name="description" content="深入了解 Shor 算法的原理和应用。学习该算法如何利用量子特性高效分解大数，对现代密码学构成潜在威胁。">
-    <meta name="keywords" content="Shor算法, 量子计算, 分解大数, 量子傅里叶变换, 量子密码学, RSA加密">
+    <title>Shor's Algorithm - Quantum Leap</title>
+     <meta name="description" content="Delve into the principles and applications of Shor's algorithm. Learn how the algorithm leverages quantum properties to efficiently factorize large numbers, posing a potential threat to modern cryptography.">
+    <meta name="keywords" content="Shor's algorithm, quantum computing, integer factorization, quantum Fourier transform, quantum cryptography, RSA encryption">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
@@ -24,35 +24,35 @@
             <div class="flex justify-between h-16">
                 <div class="flex">
                     <div class="flex-shrink-0 flex items-center">
-                        <span class="text-2xl font-bold text-blue-600">量子跃迁</span>
+                        <span class="text-2xl font-bold text-blue-600">Quantum Leap</span>
                     </div>
                     <div class="hidden md:ml-6 md:flex md:space-x-8">
                         <a href="/" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            首页
+                            Home
                         </a>
                         <a href="basic-knowledge-list.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            基础知识
+                            Basic Knowledge
                         </a>
                         <a href="quantum-applications-list.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            前沿技术
+                            Cutting-Edge Technologies
                         </a>
                          <a href="quantum-algorithms.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            量子算法
+                            Quantum Algorithms
                         </a>
                         <a href="quantum-hardware.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            量子硬件
+                            Quantum Hardware
                          </a>
                         <a href="quantum-applications.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            量子应用
+                            Quantum Applications
                         </a>
                         <a href="quantum-industry.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            量子行业
+                            Quantum Industry
                          </a>
                          <a href="advanced-quantum.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            高级量子概念
+                            Advanced Quantum Concepts
                         </a>
                         <a href="about-us.html" class="border-b-2 border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                           关于我们
+                           About Us
                         </a>
                     </div>
                 </div>
@@ -61,73 +61,73 @@
     </nav>
 
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold text-gray-900 mb-8">Shor 算法</h1>
+        <h1 class="text-3xl font-bold text-gray-900 mb-8">Shor's Algorithm</h1>
         <p class="text-gray-700 mb-4">
-            Shor 算法是量子计算领域最著名的算法之一，由 Peter Shor 于 1994 年提出。该算法能够利用量子特性高效地分解大数。
+            Shor's algorithm is one of the most famous algorithms in the field of quantum computing, proposed by Peter Shor in 1994. This algorithm is capable of efficiently factorizing large numbers using quantum properties.
         </p>
 
         <div class="bg-white rounded-lg shadow p-6 mb-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Shor 算法的历史背景</h2>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Historical Background of Shor's Algorithm</h2>
             <p class="text-gray-700 mb-4">
-               在经典计算机上，分解大数是一个非常困难的问题，其计算时间随着数字大小呈指数增长。然而，Shor 算法证明，量子计算机可以利用量子傅里叶变换等技术在多项式时间内完成大数分解。
+               On classical computers, factorizing large numbers is a very difficult problem, with computation time increasing exponentially with the size of the numbers. However, Shor's algorithm demonstrated that quantum computers could use techniques such as the quantum Fourier transform to factorize large numbers in polynomial time.
             </p>
              <p class="text-gray-700 mb-4">
-                  这一发现对现代密码学产生了巨大的冲击，因为许多现代加密算法（如 RSA）的安全性依赖于大数分解的难度。
+                  This discovery had a huge impact on modern cryptography, because the security of many modern encryption algorithms (such as RSA) relies on the difficulty of factoring large numbers.
               </p>
         </div>
         <div class="bg-white rounded-lg shadow p-6 mb-8">
-             <h2 class="text-2xl font-semibold text-gray-800 mb-4">Shor 算法的原理</h2>
+             <h2 class="text-2xl font-semibold text-gray-800 mb-4">Principles of Shor's Algorithm</h2>
                 <p class="text-gray-700 mb-4">
-                     Shor 算法主要包括以下步骤：
+                     Shor's algorithm mainly includes the following steps:
                  </p>
               <ul class="list-disc pl-6 text-gray-700 mb-4">
                     <li>
-                         <strong>量子傅里叶变换 (QFT)：</strong> 用于发现函数的周期性。
+                         <strong>Quantum Fourier Transform (QFT):</strong> Used to find the periodicity of a function.
                       </li>
                       <li>
-                        <strong>模幂运算：</strong> 将输入的数字进行模幂运算，得到一系列的数值。
+                        <strong>Modular Exponentiation:</strong> Performing modular exponentiation on the input number to obtain a series of values.
                      </li>
                      <li>
-                      <strong>周期查找：</strong> 利用 QFT 分析模幂运算的结果，找到周期性。
+                      <strong>Period Finding:</strong> Using QFT to analyze the results of modular exponentiation to find the periodicity.
                     </li>
                      <li>
-                         <strong>因数提取：</strong> 基于找到的周期，提取数字的因数。
+                         <strong>Factor Extraction:</strong> Extracting the factors of the number based on the found periodicity.
                       </li>
               </ul>
               <p class="text-gray-700 mb-4">
-                 Shor 算法的核心在于利用量子傅里叶变换来高效地找到模幂运算的周期，而这在经典计算机上是非常困难的。
+                 The core of Shor's algorithm is to use the quantum Fourier transform to efficiently find the period of modular exponentiation, which is very difficult on classical computers.
               </p>
         </div>
          <div class="bg-white rounded-lg shadow p-6 mb-8">
-           <h2 class="text-2xl font-semibold text-gray-800 mb-4">Shor 算法的应用</h2>
+           <h2 class="text-2xl font-semibold text-gray-800 mb-4">Applications of Shor's Algorithm</h2>
              <p class="text-gray-700 mb-4">
-                 Shor 算法最著名的应用就是它可以破解目前广泛使用的 RSA 加密算法。
+                 The most famous application of Shor's algorithm is its ability to crack the widely used RSA encryption algorithm.
              </p>
              <p class="text-gray-700 mb-4">
-               RSA 算法的安全性依赖于分解大数的难度，而 Shor 算法在理论上可以高效地分解 RSA 使用的大数，使得 RSA 加密不再安全。
+               The security of the RSA algorithm relies on the difficulty of factoring large numbers, and Shor's algorithm can theoretically efficiently factorize the large numbers used by RSA, making RSA encryption no longer secure.
              </p>
               <p class="text-gray-700 mb-4">
-                  这意味着，一旦可用的量子计算机足够强大，Shor 算法将会对互联网安全带来严重威胁。
+                  This means that once available quantum computers are powerful enough, Shor's algorithm will pose a serious threat to internet security.
                </p>
          </div>
             <div class="bg-white rounded-lg shadow p-6 mb-8">
-               <h2 class="text-2xl font-semibold text-gray-800 mb-4">Shor 算法的未来</h2>
+               <h2 class="text-2xl font-semibold text-gray-800 mb-4">The Future of Shor's Algorithm</h2>
               <p class="text-gray-700 mb-4">
-                 由于其在密码学领域的影响，Shor 算法的研究也推动了量子密码学的发展，例如量子密钥分发等技术。
+                 Due to its impact in the field of cryptography, research on Shor's algorithm has also promoted the development of quantum cryptography, such as quantum key distribution technologies.
               </p>
              <p class="text-gray-700 mb-4">
-                 此外，研究人员也正在探索新的量子算法，以解决更多经典计算机难以处理的问题。
+                 In addition, researchers are also exploring new quantum algorithms to solve more problems that are difficult for classical computers to handle.
              </p>
           </div>
            <div class="bg-white rounded-lg shadow p-6 mb-8">
-                <h2 class="text-2xl font-semibold text-gray-800 mb-4">拓展阅读</h2>
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Further Reading</h2>
                  <p class="text-gray-700 mb-4">
-                      您可以通过以下链接查看更多关于 Shor 算法的信息：
+                      You can check the following links for more information on Shor's algorithm:
                    </p>
                       <ul class="list-disc pl-6 text-gray-700 mb-4">
                              <li>
                              <a href="quantum-algorithms-list.html" class="text-blue-600 hover:text-blue-800">
-                                 量子密码学
+                                 Quantum Cryptography
                              </a>
                         </li>
                     </ul>

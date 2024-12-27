@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grover 算法 - 量子跃迁</title>
-     <meta name="description" content="深入了解 Grover 算法的原理和应用。学习该算法如何利用量子特性高效地在无序数据中进行搜索。">
-    <meta name="keywords" content="Grover算法, 量子计算, 量子搜索, 量子幅度放大, 量子信息, 无序数据搜索">
+    <title>Grover's Algorithm - Quantum Leap</title>
+     <meta name="description" content="Dive into the principles and applications of Grover's algorithm. Learn how this algorithm utilizes quantum properties to efficiently search unordered data.">
+    <meta name="keywords" content="Grover's algorithm, quantum computing, quantum search, quantum amplitude amplification, quantum information, unordered data search">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
@@ -24,35 +24,35 @@
             <div class="flex justify-between h-16">
                 <div class="flex">
                     <div class="flex-shrink-0 flex items-center">
-                        <span class="text-2xl font-bold text-blue-600">量子跃迁</span>
+                        <span class="text-2xl font-bold text-blue-600">Quantum Leap</span>
                     </div>
                     <div class="hidden md:ml-6 md:flex md:space-x-8">
                         <a href="/" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            首页
+                            Home
                         </a>
                         <a href="basic-knowledge-list.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            基础知识
+                            Basic Knowledge
                         </a>
                         <a href="quantum-applications-list.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            前沿技术
+                            Cutting-edge Technology
                         </a>
                          <a href="quantum-algorithms.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            量子算法
+                            Quantum Algorithms
                         </a>
                         <a href="quantum-hardware.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            量子硬件
+                            Quantum Hardware
                          </a>
                         <a href="quantum-applications.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            量子应用
+                            Quantum Applications
                         </a>
                         <a href="quantum-industry.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            量子行业
+                            Quantum Industry
                          </a>
                          <a href="advanced-quantum.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            高级量子概念
+                            Advanced Quantum Concepts
                         </a>
                         <a href="about-us.html" class="border-b-2 border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                           关于我们
+                           About Us
                         </a>
                     </div>
                 </div>
@@ -61,65 +61,65 @@
     </nav>
 
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold text-gray-900 mb-8">Grover 算法</h1>
+        <h1 class="text-3xl font-bold text-gray-900 mb-8">Grover's Algorithm</h1>
         <p class="text-gray-700 mb-4">
-           Grover 算法是一种量子搜索算法，由 Lov Grover 于 1996 年提出。该算法能够利用量子特性高效地在无序数据中进行搜索。
+          Grover's algorithm is a quantum search algorithm proposed by Lov Grover in 1996. This algorithm can use quantum properties to efficiently search in unordered data.
         </p>
 
         <div class="bg-white rounded-lg shadow p-6 mb-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Grover 算法的应用场景</h2>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Applications of Grover's Algorithm</h2>
             <p class="text-gray-700 mb-4">
-               在经典计算机中，如果要在一个包含 N 个元素的无序列表中搜索特定元素，最坏情况下需要搜索 N 次。然而，Grover 算法可以将搜索时间复杂度降低到 O(√N)。
+                In classical computers, if you want to search for a specific element in an unordered list containing N elements, the worst case scenario requires searching N times. However, Grover's algorithm can reduce the search time complexity to O(√N).
             </p>
              <p class="text-gray-700 mb-4">
-                 因此，Grover 算法可以用于加速各种搜索问题，例如：
+                Therefore, Grover's algorithm can be used to speed up various search problems, such as:
              </p>
             <ul class="list-disc pl-6 text-gray-700 mb-4">
-                <li><strong>数据库搜索：</strong> 在大量数据中查找特定记录。</li>
-                <li><strong>优化问题：</strong> 在复杂的解空间中寻找最优解。</li>
-                <li><strong>模式匹配：</strong> 在大量信息中查找特定模式。</li>
+                <li><strong>Database search:</strong> Find specific records in large amounts of data.</li>
+                <li><strong>Optimization problems:</strong> Find the optimal solution in complex solution spaces.</li>
+                <li><strong>Pattern matching:</strong> Find specific patterns in large amounts of information.</li>
             </ul>
         </div>
 
          <div class="bg-white rounded-lg shadow p-6 mb-8">
-           <h2 class="text-2xl font-semibold text-gray-800 mb-4">Grover 算法的原理</h2>
+           <h2 class="text-2xl font-semibold text-gray-800 mb-4">Principles of Grover's Algorithm</h2>
              <p class="text-gray-700 mb-4">
-                  Grover 算法主要包括以下步骤：
+                Grover's algorithm mainly includes the following steps:
             </p>
            <ul class="list-disc pl-6 text-gray-700 mb-4">
-                   <li><strong>初始化：</strong> 将量子比特初始化为叠加态。</li>
-                   <li><strong>oracle 函数：</strong> 定义一个量子函数，标记出要搜索的元素。</li>
-                   <li><strong>幅度放大：</strong> 利用量子幅度放大技术，增加目标元素的概率幅度。</li>
-                   <li><strong>测量：</strong> 对量子比特进行测量，得到目标元素的索引。</li>
+                   <li><strong>Initialization:</strong> Initialize the qubits to a superposition state.</li>
+                   <li><strong>Oracle function:</strong> Define a quantum function that marks the element to be searched.</li>
+                   <li><strong>Amplitude amplification:</strong> Use quantum amplitude amplification technology to increase the probability amplitude of the target element.</li>
+                   <li><strong>Measurement:</strong> Measure the qubits to get the index of the target element.</li>
              </ul>
                <p class="text-gray-700 mb-4">
-                    Grover 算法的核心在于利用量子幅度放大技术，逐步增加目标元素的概率幅度，最终以较高的概率搜索到目标元素。
+                   The core of Grover's algorithm lies in using quantum amplitude amplification technology to gradually increase the probability amplitude of the target element, and finally search for the target element with a higher probability.
                </p>
          </div>
         <div class="bg-white rounded-lg shadow p-6 mb-8">
-             <h2 class="text-2xl font-semibold text-gray-800 mb-4">Grover 算法的优势</h2>
+             <h2 class="text-2xl font-semibold text-gray-800 mb-4">Advantages of Grover's Algorithm</h2>
             <p class="text-gray-700 mb-4">
-                  相比于经典算法，Grover 算法可以将搜索速度提高到平方根级别。例如，如果经典算法需要 1000 次搜索，Grover 算法可能只需要 32 次。
+                Compared with classical algorithms, Grover's algorithm can increase the search speed to the square root level. For example, if a classical algorithm requires 1000 searches, Grover's algorithm may only require 32 searches.
             </p>
              <p class="text-gray-700 mb-4">
-                 虽然 Grover 算法并没有像 Shor 算法那样带来指数级别的加速，但在搜索问题上仍然具有显著优势。
+                 Although Grover's algorithm does not bring an exponential speedup like Shor's algorithm, it still has significant advantages in search problems.
              </p>
         </div>
            <div class="bg-white rounded-lg shadow p-6 mb-8">
-                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Grover 算法的未来</h2>
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">The Future of Grover's Algorithm</h2>
                   <p class="text-gray-700 mb-4">
-                 Grover 算法的应用潜力非常巨大，特别是在大数据、人工智能等领域。研究人员正在不断探索 Grover 算法的优化和拓展，以应对更加复杂的问题。
+                     Grover's algorithm has enormous application potential, especially in big data and artificial intelligence. Researchers are constantly exploring the optimization and expansion of Grover's algorithm to deal with more complex problems.
                   </p>
            </div>
             <div class="bg-white rounded-lg shadow p-6 mb-8">
-                   <h2 class="text-2xl font-semibold text-gray-800 mb-4">拓展阅读</h2>
+                   <h2 class="text-2xl font-semibold text-gray-800 mb-4">Further Reading</h2>
                      <p class="text-gray-700 mb-4">
-                           您可以通过以下链接查看更多关于 Grover 算法的信息：
+                           You can view more information about Grover's algorithm through the following links:
                        </p>
                      <ul class="list-disc pl-6 text-gray-700 mb-4">
                             <li>
                                 <a href="advanced-technology.html" class="text-blue-600 hover:text-blue-800">
-                                     前往前沿技术
+                                    Go to Cutting-edge Technology
                                 </a>
                           </li>
                     </ul>
