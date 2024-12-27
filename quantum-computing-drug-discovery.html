@@ -19,43 +19,45 @@
 </script>
 </head>
 <body class="bg-gray-50">
-     <nav class="bg-white shadow-lg">
+    <!-- Navigation bar -->
+    <nav class="bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between h-16">
-                <div class="flex">
-                    <div class="flex-shrink-0 flex items-center">
-                        <span class="text-2xl font-bold text-blue-600">Quantum Leap</span>
-                    </div>
-                    <div class="hidden md:ml-6 md:flex md:space-x-8">
-                        <a href="/" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            Home
-                        </a>
-                        <a href="basic-knowledge-list.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            Basic Knowledge
-                        </a>
-                        <a href="quantum-applications-list.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            Cutting-Edge Technologies
-                        </a>
-                         <a href="quantum-algorithms.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            Quantum Algorithms
-                        </a>
-                        <a href="quantum-hardware.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            Quantum Hardware
-                         </a>
-                        <a href="quantum-applications.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            Quantum Applications
-                        </a>
-                        <a href="quantum-industry.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            Quantum Industry
-                         </a>
-                         <a href="advanced-quantum.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                            Advanced Quantum Concepts
-                        </a>
-                        <a href="about-us.html" class="border-b-2 border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                           About Us
-                        </a>
-                    </div>
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-blue-600">Quantum Leap</span>
                 </div>
+                <div class="flex md:hidden">
+                    <button id="menu-toggle" class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden md:flex md:ml-6 md:space-x-8">
+                    <a href="/" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Home</a>
+                    <a href="basic-knowledge-list.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Basic Knowledge</a>
+                    <a href="quantum-applications-list.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Cutting-edge Technology</a>
+                    <a href="quantum-algorithms.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Quantum Algorithms</a>
+                    <a href="quantum-hardware.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Quantum Hardware</a>
+                    <a href="quantum-applications.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Quantum Applications</a>
+                    <a href="quantum-industry.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Quantum Industry</a>
+                    <a href="advanced-quantum.html" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Advanced Quantum Concepts</a>
+                    <a href="about-us.html" class="border-b-2 border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">About Us</a>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="basic-knowledge-list.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Basic Knowledge</a>
+                <a href="quantum-applications-list.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Cutting-edge Technology</a>
+                <a href="quantum-algorithms.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Algorithms</a>
+                <a href="quantum-hardware.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Hardware</a>
+                <a href="quantum-applications.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Applications</a>
+                <a href="quantum-industry.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Industry</a>
+                <a href="advanced-quantum.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Advanced Quantum Concepts</a>
+                <a href="about-us.html" class="border-b-2 border-blue-500 text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About Us</a>
             </div>
         </div>
     </nav>
@@ -128,5 +130,14 @@
                         </ul>
              </div>
     </div>
+    <script>
+        // Toggle mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
