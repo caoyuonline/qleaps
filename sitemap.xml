@@ -1,177 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://quantumleaps.top/</loc>
+    <loc>https://quantumleaps.top/about-us.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/advanced-quantum.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/basic-knowledge-list.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/grovers-algorithm.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/how-quantum-computing-works.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/index.html</loc>
     <lastmod>2024-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://quantumleaps.top/about-us.html</loc>
-    <lastmod>2024-12-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://quantumleaps.top/basic-knowledge-list.html</loc>
-    <lastmod>2024-12-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://quantumleaps.top/quantum-applications-list.html</loc>
-    <lastmod>2024-12-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-    <url>
-    <loc>https://quantumleaps.top/quantum-algorithms.html</loc>
-    <lastmod>2024-12-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://quantumleaps.top/quantum-hardware.html</loc>
-    <lastmod>2024-12-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-    <url>
-    <loc>https://quantumleaps.top/quantum-industry.html</loc>
-    <lastmod>2024-12-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
- <url>
-    <loc>https://quantumleaps.top/advanced-quantum.html</loc>
-    <lastmod>2024-12-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
- <url>
     <loc>https://quantumleaps.top/quantum-algorithm-advantages.html</loc>
-    <lastmod>2024-12-27</lastmod>
+    <lastmod>2024-12-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://quantumleaps.top/quantum-algorithm-basics.html</loc>
-    <lastmod>2024-12-27</lastmod>
-     <changefreq>monthly</changefreq>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-   <url>
+  <url>
     <loc>https://quantumleaps.top/quantum-algorithm-challenges.html</loc>
-    <lastmod>2024-12-27</lastmod>
-     <changefreq>monthly</changefreq>
-   <priority>0.7</priority>
-  </url>
- <url>
-    <loc>https://quantumleaps.top/quantum-algorithm-future.html</loc>
-    <lastmod>2024-12-27</lastmod>
-     <changefreq>monthly</changefreq>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
- <url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-algorithm-future.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://quantumleaps.top/quantum-algorithm-principles.html</loc>
-    <lastmod>2024-12-27</lastmod>
+    <lastmod>2024-12-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://quantumleaps.top/quantum-algorithms-explained-basic.html</loc>
-    <lastmod>2024-12-27</lastmod>
+    <lastmod>2024-12-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
- <url>
-    <loc>https://quantumleaps.top/quantum-computing-ai.html</loc>
-    <lastmod>2024-12-27</lastmod>
-     <changefreq>monthly</changefreq>
+  <url>
+    <loc>https://quantumleaps.top/quantum-algorithms-list.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-algorithms.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-applications-list.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-applications.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-bits-explained.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-cloud-computing.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-computer-benchmarking.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-computing-ai.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://quantumleaps.top/quantum-computing-drug-discovery.html</loc>
-    <lastmod>2024-12-27</lastmod>
+    <lastmod>2024-12-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-   <url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-computing-education.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-computing-ethics.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://quantumleaps.top/quantum-computing-finance.html</loc>
-    <lastmod>2024-12-27</lastmod>
-     <changefreq>monthly</changefreq>
-   <priority>0.7</priority>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
- <url>
+  <url>
     <loc>https://quantumleaps.top/quantum-computing-materials-science.html</loc>
-    <lastmod>2024-12-27</lastmod>
+    <lastmod>2024-12-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
- <url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-computing-programming-languages.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-computing-roadmaps.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-computing-simulators.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://quantumleaps.top/quantum-entanglement-explained.html</loc>
-    <lastmod>2024-12-27</lastmod>
+    <lastmod>2024-12-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://quantumleaps.top/quantum-gates-explained.html</loc>
-    <lastmod>2024-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-  </url>
-    <url>
-    <loc>https://quantumleaps.top/quantum-gates.html</loc>
-    <lastmod>2024-12-27</lastmod>
-     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-    <url>
-    <loc>https://quantumleaps.top/quantum-superposition.html</loc>
-    <lastmod>2024-12-27</lastmod>
-      <changefreq>monthly</changefreq>
-   <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://quantumleaps.top/shors-algorithm.html</loc>
-    <lastmod>2024-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
- <url>
-    <loc>https://quantumleaps.top/what-are-qubits.html</loc>
-    <lastmod>2024-12-27</lastmod>
-     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
- </url>
-  <url>
-    <loc>https://quantumleaps.top/grovers-algorithm.html</loc>
-    <lastmod>2024-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-    <url>
-    <loc>https://quantumleaps.top/how-quantum-computing-works.html</loc>
-     <lastmod>2024-12-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://quantumleaps.top/quantum-entanglement.html</loc>
-     <lastmod>2024-12-28</lastmod>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-fiber.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-gates-explained.html</loc>
+    <lastmod>2024-12-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://quantumleaps.top/quantum-fiber.html</loc>
-     <lastmod>2024-12-28</lastmod>
+    <loc>https://quantumleaps.top/quantum-gates.html</loc>
+    <lastmod>2024-12-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-hardware.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-industry.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-investment-trends.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-key-players.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://quantumleaps.top/quantum-mechanics.html</loc>
-     <lastmod>2024-12-28</lastmod>
+    <lastmod>2024-12-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
- </urlset>
+  <url>
+    <loc>https://quantumleaps.top/quantum-national-security.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-regulation-policy.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-research-labs.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-software-development-kits.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-startups.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-superposition.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/quantum-workforce.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/shors-algorithm.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumleaps.top/what-are-qubits.html</loc>
+    <lastmod>2024-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
