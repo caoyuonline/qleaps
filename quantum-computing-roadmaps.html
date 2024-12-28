@@ -8,11 +8,19 @@
     <meta name="description" content="Explore the future projections for quantum computing.">
 </head>
 <body class="bg-gray-100">
+    <!-- Navigation bar -->
     <nav class="bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold text-blue-600">Quantum Leap</a>
+                    <span class="text-2xl font-bold text-blue-600">Quantum Leap</span>
+                </div>
+                <div class="flex md:hidden">
+                    <button id="menu-toggle" class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
                 </div>
                 <div class="hidden md:flex md:ml-6 md:space-x-8">
                     <a href="/" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Home</a>
@@ -27,11 +35,112 @@
                 </div>
             </div>
         </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="basic-knowledge-list.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Basic Knowledge</a>
+                <a href="quantum-applications-list.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Cutting-edge Technology</a>
+                <a href="quantum-algorithms.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Algorithms</a>
+                <a href="quantum-hardware.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Hardware</a>
+                <a href="quantum-applications.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Applications</a>
+                <a href="quantum-industry.html" class="border-b-2 border-blue-500 text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Industry</a>
+                <a href="advanced-quantum.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Advanced Quantum Concepts</a>
+                <a href="about-us.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+            </div>
+        </div>
     </nav>
+
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <h1 class="text-3xl font-bold text-gray-900 mb-4">Quantum Computing Roadmaps</h1>
         <p class="text-gray-700 mb-8">An overview of the current projections for the future of quantum computing, and its various technological and financial milestones. See the expected timeline for quantum development.</p>
-        <!-- Add detailed content about quantum computing roadmaps here -->
+    
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Navigating the Quantum Landscape: Roadmaps and Milestones</h2>
+            <p class="text-gray-700 mb-6">Quantum computing is rapidly evolving, and while a universally agreed-upon roadmap doesn't exist, various organizations, governments, and companies have outlined their projected paths. These roadmaps are crucial for guiding investment, research, and development efforts. Understanding these projected timelines and milestones is essential to grasp the future potential of quantum computing and its transformative impact.</p>
+    
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Key Stages in Quantum Computing Development</h3>
+              <p class="text-gray-700 mb-6">Quantum computing development is often categorized into these broad stages:</p>
+            <ul class="list-disc list-inside text-gray-700 mb-6">
+                <li>
+                     <span class="font-semibold">NISQ Era (Noisy Intermediate-Scale Quantum):</span> This is the current era, characterized by quantum computers with a limited number of qubits and high error rates. These devices are useful for specific tasks and early exploration but are not yet capable of fault-tolerant quantum computation. Key focuses in this era include improving qubit coherence and fidelity, and developing algorithms tailored for these devices.
+                </li>
+                <li>
+                    <span class="font-semibold">Fault-Tolerant Quantum Computing:</span> This stage involves building quantum computers with enough qubits and error correction mechanisms to perform complex and reliable computations. Error correction is crucial to achieve the full potential of quantum algorithms. Reaching this phase requires significant advancements in hardware and software.
+                </li>
+                <li>
+                     <span class="font-semibold">Quantum Supremacy/Advantage:</span> This refers to the point at which quantum computers can solve problems that are practically impossible for classical computers. This milestone is less about a single "magic" calculation and more about establishing a consistent advantage for quantum over classical machines across a range of problems.
+                </li>
+                <li>
+                      <span class="font-semibold">Practical Quantum Computing:</span> This stage represents the widespread availability and practical application of fault-tolerant quantum computers across various sectors. It implies a robust quantum ecosystem with readily available quantum software, infrastructure, and trained professionals.
+                </li>
+            </ul>
+             <h3 class="text-xl font-semibold text-gray-800 mb-2">Technological Milestones</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-6">
+                <li>
+                    <span class="font-semibold">Improved Qubit Stability and Coherence:</span> Increasing the stability and coherence times of qubits is critical for reducing errors. Progress is being made in different qubit technologies (superconducting, trapped ion, photonic, etc.) to enhance these properties.
+                </li>
+                <li>
+                    <span class="font-semibold">Scaling Qubit Count:</span> Moving beyond tens or hundreds of qubits to thousands and millions, while maintaining control and fidelity, is essential. This involves developing new architectures and manufacturing techniques.
+                </li>
+               <li>
+                     <span class="font-semibold">Development of Error Correction Methods:</span> Building reliable quantum computers requires robust error correction. This is one of the biggest technical hurdles currently being worked on by researchers worldwide.
+                </li>
+                  <li>
+                    <span class="font-semibold">Advancements in Quantum Algorithms:</span> Beyond building hardware, research is ongoing to refine and develop algorithms that can unlock the power of quantum computers for specific use-cases.
+                 </li>
+                <li>
+                     <span class="font-semibold">Software Tools and Development Frameworks:</span> Accessible and easy-to-use quantum programming languages, compilers, and tools are crucial for wider adoption.
+                </li>
+            </ul>
+    
+             <h3 class="text-xl font-semibold text-gray-800 mb-2">Financial Milestones and Investment Landscape</h3>
+               <p class="text-gray-700 mb-6">The quantum computing field is attracting significant investment from governments, venture capital, and private corporations. Funding is vital for advancing the different aspects of quantum development. </p>
+            <ul class="list-disc list-inside text-gray-700 mb-6">
+                 <li>
+                    <span class="font-semibold">Government Funding Initiatives:</span> Many countries have launched national quantum strategies with significant funding allocated for quantum research, infrastructure development, and workforce training. This indicates a global commitment to this technology.
+                </li>
+                  <li>
+                    <span class="font-semibold">Venture Capital and Private Equity:</span> Quantum startups are attracting private investment, reflecting the potential commercial value of quantum technologies.  This includes companies building hardware, algorithms, software, and cloud-based services.
+                </li>
+                 <li>
+                    <span class="font-semibold">Public Company Investments:</span>  Large technology companies are making significant investments in quantum computing to maintain a strategic edge in the future.
+                 </li>
+                <li>
+                    <span class="font-semibold">Market Growth and Commercialization:</span> As quantum technology progresses, we will see the emergence of new industries and markets centered around practical applications. For now, there are a number of quantum cloud service providers, quantum software companies and quantum consultants who are actively serving governments and private companies.
+                </li>
+               <li>
+                    <span class="font-semibold">Economic Impact Studies:</span>  Many organizations are working to understand the potential economic impact of quantum computing across various sectors, from healthcare and finance to materials science and logistics.
+                </li>
+            </ul>
+    
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Projected Timelines (Estimates)</h3>
+            <p class="text-gray-700 mb-6">It's important to note that timelines for quantum computing development are estimates and are subject to change based on technological breakthroughs. Some reasonable estimates include: </p>
+            <ul class="list-disc list-inside text-gray-700 mb-6">
+                  <li>
+                    <span class="font-semibold">NISQ Era (Now - 2025):</span> Continued research, hardware advancements, and development of near-term quantum algorithms. Focus remains on refining the performance of current quantum hardware and establishing proof of concepts.
+                </li>
+                 <li>
+                     <span class="font-semibold">Early Fault-Tolerant Quantum Computing (2025-2030):</span> Development of small-scale error-corrected quantum devices. Initial demonstrations of quantum advantage for specific niche applications.
+                </li>
+                  <li>
+                    <span class="font-semibold">Practical Quantum Computing (2030+):</span>  More widespread commercialization, the beginning of a robust ecosystem, and use of quantum computers to solve problems in various industries.
+                 </li>
+            </ul>
+    
+    
+            <p class="text-gray-700 mb-6">The path to fault-tolerant and practical quantum computing is complex and requires significant effort across multiple scientific disciplines. Continued research, collaboration, and investment are crucial to the success of this transformative technology. The timelines provided are also not uniform for all technologies in quantum. For example, some believe that quantum sensors will see earlier use than quantum computing devices. </p>
+        </div>
     </div>
+
+    <script>
+        // Toggle mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
