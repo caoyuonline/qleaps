@@ -8,11 +8,19 @@
     <meta name="description" content="Discover leading quantum computing research labs.">
 </head>
 <body class="bg-gray-100">
+    <!-- Navigation bar -->
     <nav class="bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold text-blue-600">Quantum Leap</a>
+                    <span class="text-2xl font-bold text-blue-600">Quantum Leap</span>
+                </div>
+                <div class="flex md:hidden">
+                    <button id="menu-toggle" class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
                 </div>
                 <div class="hidden md:flex md:ml-6 md:space-x-8">
                     <a href="/" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Home</a>
@@ -27,11 +35,178 @@
                 </div>
             </div>
         </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="basic-knowledge-list.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Basic Knowledge</a>
+                <a href="quantum-applications-list.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Cutting-edge Technology</a>
+                <a href="quantum-algorithms.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Algorithms</a>
+                <a href="quantum-hardware.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Hardware</a>
+                <a href="quantum-applications.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Applications</a>
+                <a href="quantum-industry.html" class="border-b-2 border-blue-500 text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Industry</a>
+                <a href="advanced-quantum.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Advanced Quantum Concepts</a>
+                <a href="about-us.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+            </div>
+        </div>
     </nav>
+
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <h1 class="text-3xl font-bold text-gray-900 mb-4">Quantum Computing Research Labs</h1>
         <p class="text-gray-700 mb-8">An overview of where cutting-edge quantum research is taking place. Explore the institutions and labs at the forefront of discovery.</p>
         <!-- Add detailed content about research labs here -->
+        <p class="text-gray-700 mb-4">Quantum computing is a highly active area of research, with numerous institutions and dedicated laboratories pushing the boundaries of this transformative technology. These labs are hubs of innovation, exploring fundamental quantum phenomena, developing new qubit technologies, and designing the algorithms and software necessary to harness quantum power. The research conducted in these labs is critical for realizing the full potential of quantum computers.</p>
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Leading Research Labs in North America:</h2>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li><strong>Massachusetts Institute of Technology (MIT), USA:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Center for Theoretical Physics:</strong> Exploring the fundamental physics of quantum information.</li>
+                    <li><strong>Research Laboratory of Electronics (RLE):</strong>  Housing groups working on superconducting qubits, photonic quantum computing, and quantum sensing.</li>
+                    <li><strong>MIT-IBM Watson AI Lab:</strong> Collaborations focusing on quantum machine learning and applications.</li>
+                </ul>
+            </li>
+            <li><strong>California Institute of Technology (Caltech), USA:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Institute for Quantum Information and Matter (IQIM):</strong> A leading center for quantum science and technology, exploring various qubit modalities and quantum algorithms.</li>
+                    <li><strong>Applied Physics and Computation:</strong> Research on superconducting circuits and quantum photonics.</li>
+                </ul>
+            </li>
+            <li><strong>Stanford University, USA:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Geballe Laboratory for Advanced Materials:</strong> Research on novel materials for quantum computing.</li>
+                    <li><strong>SLAC National Accelerator Laboratory:</strong>  Exploring quantum computing applications in high-energy physics and materials science.</li>
+                </ul>
+            </li>
+            <li><strong>University of California, Berkeley, USA:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Quantum Nanoelectronics Laboratory:</strong> Focus on superconducting qubits and quantum devices.</li>
+                    <li><strong>Berkeley Center for Quantum Information and Computation (BCQIC):</strong>  A hub for theoretical and experimental quantum research.</li>
+                </ul>
+            </li>
+            <li><strong>University of Maryland, College Park, USA:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Joint Quantum Institute (JQI):</strong> A collaboration between the University of Maryland and NIST, focusing on trapped-ion quantum computing, quantum measurement, and quantum materials.</li>
+                    <li><strong>Quantum Materials Center:</strong> Exploring materials with exotic quantum properties.</li>
+                </ul>
+            </li>
+            <li><strong>University of Chicago, USA:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Chicago Quantum Exchange:</strong> A collaborative of leading research institutions and industry partners advancing quantum information science and technology.</li>
+                    <li><strong>Pritzker School of Molecular Engineering:</strong> Research on quantum materials and devices.</li>
+                </ul>
+            </li>
+            <li><strong>University of Waterloo, Canada:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Institute for Quantum Computing (IQC):</strong> A world-renowned center for quantum information research, covering theory, experiment, and applications.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Leading Research Labs in Europe:</h2>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li><strong>Delft University of Technology (TU Delft), Netherlands:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>QuTech:</strong> A leading European research center focused on superconducting qubits, topological qubits, and quantum internet.</li>
+                </ul>
+            </li>
+            <li><strong>ETH Zurich, Switzerland:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Department of Physics:</strong> Strong groups working on superconducting qubits, trapped ions, and quantum information theory.</li>
+                </ul>
+            </li>
+            <li><strong>University of Oxford, UK:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Department of Physics:</strong>  Significant research in superconducting circuits, trapped ions, and quantum photonics.</li>
+                </ul>
+            </li>
+            <li><strong>University of Cambridge, UK:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Department of Physics:</strong>  Research spanning theoretical quantum information, quantum devices, and applications.</li>
+                </ul>
+            </li>
+            <li><strong>Imperial College London, UK:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Centre for Quantum Engineering:</strong> Focusing on quantum photonics and integrated quantum circuits.</li>
+                </ul>
+            </li>
+            <li><strong>CEA-Leti, France:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Quantum Engineering and Technologies (QUANTEL):</strong> Research on silicon-based qubits and cryogenic electronics for quantum control.</li>
+                </ul>
+            </li>
+            <li><strong>Forschungszentrum Jülich, Germany:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Peter Grünberg Institute (PGI):</strong>  Research on superconducting quantum circuits and quantum materials.</li>
+                </ul>
+            </li>
+            <li><strong>Max Planck Institute of Quantum Optics, Germany:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li>Leading research in trapped-ion quantum computing and quantum simulation with ultracold atoms.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Leading Research Labs in Asia and Australia:</h2>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li><strong>University of New South Wales (UNSW), Australia:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Centre for Quantum Computation and Communication Technology (CQC2T):</strong>  A world-leading center for silicon-based quantum computing research.</li>
+                </ul>
+            </li>
+            <li><strong>University of Sydney, Australia:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Sydney Nano Institute:</strong> Research in quantum photonics and quantum materials.</li>
+                </ul>
+            </li>
+            <li><strong>RIKEN, Japan:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Center for Quantum Computing (RQC):</strong>  A national center for quantum computing research and development.</li>
+                </ul>
+            </li>
+            <li><strong>The University of Tokyo, Japan:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li>Leading research in superconducting qubits and quantum information theory.</li>
+                </ul>
+            </li>
+            <li><strong>Tsinghua University, China:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Institute for Interdisciplinary Information Sciences (IIIS):</strong>  Significant research in quantum computing and quantum cryptography.</li>
+                </ul>
+            </li>
+            <li><strong>University of Science and Technology of China (USTC):</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li>Known for their work in photonic quantum computing and quantum communication.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Key Focus Areas in These Labs:</h2>
+        <p class="text-gray-700 mb-4">These research labs are exploring a wide range of topics crucial to the advancement of quantum computing, including:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li><strong>Developing and improving different qubit technologies:</strong> Superconducting, trapped ions, photonics, neutral atoms, topological, and silicon-based qubits.</li>
+            <li><strong>Improving qubit coherence times and fidelity:</strong>  Making qubits more stable and reducing errors.</li>
+            <li><strong>Scaling up the number of qubits:</strong>  Building larger and more powerful quantum processors.</li>
+            <li><strong>Developing quantum error correction techniques:</strong>  Essential for building fault-tolerant quantum computers.</li>
+            <li><strong>Designing novel quantum algorithms:</strong>  Finding new ways to leverage quantum properties for computational advantage.</li>
+            <li><strong>Developing quantum software and programming languages:</strong> Making quantum computers easier to program and use.</li>
+            <li><strong>Exploring applications of quantum computing:</strong>  In fields like drug discovery, materials science, finance, and artificial intelligence.</li>
+            <li><strong>Investigating quantum communication and cryptography:</strong>  Developing secure communication methods based on quantum mechanics.</li>
+            <li><strong>Developing quantum sensors and metrology techniques:</strong> Utilizing quantum phenomena for highly precise measurements.</li>
+            <li><strong>Studying the fundamental physics of quantum information:</strong>  Delving into the theoretical underpinnings of quantum computation.</li>
+        </ul>
+
+        <p class="text-gray-700 mb-8">The research labs listed above, along with many others around the globe, are the engines driving the progress in quantum computing. Their discoveries and innovations are paving the way for a future where quantum computers can solve some of the world's most challenging problems.</p>
     </div>
+    
+    <script>
+        // Toggle mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
