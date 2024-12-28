@@ -8,11 +8,19 @@
     <meta name="description" content="Overview of major companies in the quantum computing sector.">
 </head>
 <body class="bg-gray-100">
+    <!-- Navigation bar -->
     <nav class="bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold text-blue-600">Quantum Leap</a>
+                    <span class="text-2xl font-bold text-blue-600">Quantum Leap</span>
+                </div>
+                <div class="flex md:hidden">
+                    <button id="menu-toggle" class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
                 </div>
                 <div class="hidden md:flex md:ml-6 md:space-x-8">
                     <a href="/" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Home</a>
@@ -27,11 +35,97 @@
                 </div>
             </div>
         </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="basic-knowledge-list.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Basic Knowledge</a>
+                <a href="quantum-applications-list.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Cutting-edge Technology</a>
+                <a href="quantum-algorithms.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Algorithms</a>
+                <a href="quantum-hardware.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Hardware</a>
+                <a href="quantum-applications.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Applications</a>
+                <a href="quantum-industry.html" class="border-b-2 border-blue-500 text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Industry</a>
+                <a href="advanced-quantum.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Advanced Quantum Concepts</a>
+                <a href="about-us.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+            </div>
+        </div>
     </nav>
+
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <h1 class="text-3xl font-bold text-gray-900 mb-4">Key Players in the Quantum Computing Industry</h1>
         <p class="text-gray-700 mb-8">An overview of the main companies that are involved in quantum technology. Learn about the leaders and their contributions.</p>
         <!-- Add detailed content about key players here -->
+        <p class="text-gray-700 mb-4">The quantum computing industry is a rapidly evolving landscape, with significant contributions coming from a diverse range of organizations. These key players can be broadly categorized into major technology companies, specialized quantum computing companies, research institutions, and government initiatives. Each plays a crucial role in advancing the field from fundamental research to the development of practical quantum computers and applications.</p>
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Major Technology Companies:</h2>
+        <p class="text-gray-700 mb-4">These established giants bring significant resources, infrastructure, and talent to the quantum computing arena.</p>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li><strong>Google Quantum AI:</strong>  Focusing on developing superconducting quantum processors and exploring quantum algorithms. They have made significant progress in demonstrating "quantum supremacy" (though debated) and are actively working towards fault-tolerant quantum computers. Key projects include their "Sycamore" processor and their open-source quantum software framework, Cirq.</li>
+            <li><strong>IBM Quantum:</strong>  Offering cloud access to their quantum computers through the IBM Quantum Experience, fostering a growing community of users and developers. They are pursuing superconducting qubit technology and have a strong focus on developing quantum software and applications across various industries. Their Qiskit SDK is a widely used tool for quantum programming.</li>
+            <li><strong>Microsoft Quantum:</strong>  Taking a multi-pronged approach, exploring topological qubits (which are theoretically more resistant to noise) alongside software and applications development. Their Q# programming language and Quantum Development Kit are designed to make quantum computing accessible to a wider audience. They also offer Azure Quantum, a cloud platform for accessing various quantum hardware and software solutions.</li>
+            <li><strong>Intel:</strong>  Focusing on silicon-based quantum computing, leveraging their expertise in semiconductor manufacturing. They are developing spin qubits on silicon and have released cryogenic control chips necessary for operating quantum computers.</li>
+            <li><strong>Amazon (AWS):</strong> While not building their own quantum hardware yet, AWS offers Amazon Braket, a cloud service that provides access to quantum computers from various hardware providers. This allows users to experiment with different quantum technologies and focus on application development.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Specialized Quantum Computing Companies (Startups and Scale-ups):</h2>
+        <p class="text-gray-700 mb-4">These companies are dedicated solely to advancing quantum technology and are often at the forefront of innovation in specific areas.</p>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li><strong>Rigetti Computing:</strong>  Developing superconducting quantum computers and a full-stack platform, including their Forest software platform. They aim to build practical, application-specific quantum computers.</li>
+            <li><strong>IonQ:</strong>  Building trapped-ion quantum computers, known for their high fidelity and connectivity. They have made their quantum computers accessible through cloud platforms and are actively working on scaling their systems.</li>
+            <li><strong>Quantum Circuits, Inc. (QCI):</strong>  Focusing on superconducting quantum computers and developing software and applications for industries like finance and materials science.</li>
+            <li><strong>PsiQuantum:</strong>  Taking a photonic approach to building a large-scale, fault-tolerant quantum computer, leveraging existing silicon photonics manufacturing.</li>
+            <li><strong>ColdQuanta:</strong>  Developing quantum computers based on neutral atoms trapped and manipulated by lasers. They also focus on quantum sensing and other applications.</li>
+            <li><strong>D-Wave Systems:</strong>  Pioneering quantum annealing technology, which is particularly suited for solving optimization problems. While technically not a universal quantum computer, it has found niche applications in areas like logistics and materials discovery.</li>
+            <li><strong>Quantinuum:</strong>  Formed by the merger of Cambridge Quantum and Honeywell Quantum Solutions, they possess expertise in both trapped-ion quantum hardware and quantum software, including the t|ket> compiler.</li>
+            <li><strong>Zapata Computing:</strong>  Developing a software platform called Orquestra for building and deploying quantum workflows across different quantum hardware.</li>
+            <li><strong>Classiq:</strong>  Providing a platform for high-level quantum algorithm design and compilation, simplifying the process of programming quantum computers.</li>
+            <li><strong>Riverlane:</strong>  Building the operating system for quantum computers, aiming to manage the complex interactions within quantum systems.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Research Institutions and Universities:</h2>
+        <p class="text-gray-700 mb-4">These institutions are the foundation of quantum computing, conducting fundamental research and training the next generation of quantum scientists and engineers.</p>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li><strong>MIT (Massachusetts Institute of Technology):</strong> Home to numerous leading quantum research groups across various disciplines.</li>
+            <li><strong>Caltech (California Institute of Technology):</strong> A prominent center for quantum information science and technology.</li>
+            <li><strong>Stanford University:</strong>  Conducting cutting-edge research in quantum hardware, software, and applications.</li>
+            <li><strong>University of Oxford:</strong>  A leading UK institution with strong quantum computing research programs.</li>
+            <li><strong>University of Cambridge:</strong>  Another key UK institution with significant contributions to quantum science.</li>
+            <li><strong>University of Waterloo (Institute for Quantum Computing - IQC):</strong>  A world-renowned center for quantum information research.</li>
+            <li><strong>Delft University of Technology (QuTech):</strong>  A leading European center for quantum technology, particularly focusing on superconducting and topological qubits.</li>
+            <li><strong>ETH Zurich:</strong>  Home to influential research groups in quantum information theory and experimental quantum physics.</li>
+            <li>Numerous other universities worldwide contribute significantly to the field.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Government Agencies and Initiatives:</h2>
+        <p class="text-gray-700 mb-4">Governments around the world are recognizing the strategic importance of quantum computing and are investing heavily in research and development.</p>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li><strong>National Institute of Standards and Technology (NIST) (USA):</strong>  Plays a crucial role in setting standards for quantum technologies and conducting foundational research.</li>
+            <li><strong>UK National Quantum Technologies Programme:</strong>  A government initiative supporting research, development, and commercialization of quantum technologies in the UK.</li>
+            <li><strong>EU Quantum Flagship:</strong>  A large-scale initiative funding quantum research and innovation across Europe.</li>
+            <li>Government initiatives in countries like Canada, China, Australia, Germany, and others are also significantly contributing to the advancement of quantum computing.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Key Areas of Contribution:</h2>
+        <p class="text-gray-700 mb-4">These key players contribute across various crucial aspects of quantum computing:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li><strong>Hardware Development:</strong> Designing and building different types of quantum computers (superconducting, trapped ion, photonic, etc.).</li>
+            <li><strong>Software and Algorithm Development:</strong> Creating quantum programming languages, compilers, and algorithms to harness the power of quantum computers.</li>
+            <li><strong>Applications Research:</strong> Identifying and developing practical applications for quantum computers in various fields like drug discovery, materials science, finance, and cryptography.</li>
+            <li><strong>Cloud Access and Platforms:</strong> Providing access to quantum computing resources through cloud services.</li>
+            <li><strong>Research and Education:</strong> Conducting fundamental research and training the next generation of quantum experts.</li>
+            <li><strong>Standardization and Policy:</strong> Establishing standards and shaping policies to foster the responsible development and adoption of quantum technologies.</li>
+        </ul>
+
+        <p class="text-gray-700 mb-8">The quantum computing industry is a collaborative ecosystem, where these diverse players contribute their unique expertise and resources to push the boundaries of what's possible. The combined efforts of major tech companies, specialized startups, leading research institutions, and supportive government initiatives are driving rapid progress towards realizing the full potential of quantum computation.</p>
     </div>
+    <script>
+        // Toggle mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

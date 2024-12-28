@@ -8,11 +8,19 @@
     <meta name="description" content="Explore innovative quantum computing startups.">
 </head>
 <body class="bg-gray-100">
+    <!-- Navigation bar -->
     <nav class="bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold text-blue-600">Quantum Leap</a>
+                    <span class="text-2xl font-bold text-blue-600">Quantum Leap</span>
+                </div>
+                <div class="flex md:hidden">
+                    <button id="menu-toggle" class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
                 </div>
                 <div class="hidden md:flex md:ml-6 md:space-x-8">
                     <a href="/" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Home</a>
@@ -27,11 +35,101 @@
                 </div>
             </div>
         </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="basic-knowledge-list.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Basic Knowledge</a>
+                <a href="quantum-applications-list.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Cutting-edge Technology</a>
+                <a href="quantum-algorithms.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Algorithms</a>
+                <a href="quantum-hardware.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Hardware</a>
+                <a href="quantum-applications.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Applications</a>
+                <a href="quantum-industry.html" class="border-b-2 border-blue-500 text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Quantum Industry</a>
+                <a href="advanced-quantum.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Advanced Quantum Concepts</a>
+                <a href="about-us.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+            </div>
+        </div>
     </nav>
+
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <h1 class="text-3xl font-bold text-gray-900 mb-4">Quantum Computing Startups</h1>
         <p class="text-gray-700 mb-8">An investigation of new startups that are driving innovation in the field of quantum computing. Explore the companies pushing the boundaries of what's possible.</p>
         <!-- Add detailed content about quantum startups here -->
+        <p class="text-gray-700 mb-4">The quantum computing landscape is rapidly evolving, with numerous startups emerging to tackle the complex challenges and immense opportunities this revolutionary technology presents. These companies are not just theoretical ventures; they are actively building quantum hardware, developing quantum algorithms, and creating software platforms to make quantum computing accessible and applicable to real-world problems.</p>
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Key Areas of Focus for Quantum Startups:</h2>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li><strong>Quantum Hardware Development:</strong> This is arguably the most challenging area, focusing on building the physical qubits and the infrastructure to control them. Startups are exploring various qubit technologies, including:
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Superconducting Qubits:</strong> Leveraging principles of superconductivity at extremely low temperatures.</li>
+                    <li><strong>Trapped Ion Qubits:</strong> Utilizing individual ions held in place by electromagnetic fields.</li>
+                    <li><strong>Photonic Qubits:</strong> Encoding information in photons (light particles).</li>
+                    <li><strong>Neutral Atom Qubits:</strong> Using individual neutral atoms trapped and manipulated by lasers.</li>
+                    <li><strong>Silicon-based Qubits:</strong> Leveraging existing semiconductor manufacturing techniques.</li>
+                </ul>
+            </li>
+            <li><strong>Quantum Software and Algorithm Development:</strong>  This area focuses on creating the software tools and algorithms necessary to harness the power of quantum computers. This includes:
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Quantum Algorithm Design:</strong> Developing new algorithms that can outperform classical algorithms for specific tasks.</li>
+                    <li><strong>Quantum Programming Languages and Frameworks:</strong> Creating developer-friendly tools to program quantum computers.</li>
+                    <li><strong>Quantum Simulation Software:</strong> Developing software to simulate quantum systems on classical computers, aiding in the design and validation of quantum algorithms.</li>
+                </ul>
+            </li>
+            <li><strong>Quantum Applications and Services:</strong>  This involves identifying and developing practical applications for quantum computers across various industries, and offering services to help businesses adopt quantum technology. Key application areas include:
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Drug Discovery and Materials Science:</strong> Simulating molecular interactions to accelerate the development of new drugs and materials.</li>
+                    <li><strong>Financial Modeling and Risk Management:</strong> Developing more sophisticated models for financial forecasting and risk assessment.</li>
+                    <li><strong>Optimization and Logistics:</strong> Solving complex optimization problems in supply chain management, logistics, and scheduling.</li>
+                    <li><strong>Artificial Intelligence and Machine Learning:</strong> Enhancing machine learning algorithms with quantum capabilities.</li>
+                    <li><strong>Cryptography and Cybersecurity:</strong> Developing quantum-resistant cryptography and leveraging quantum properties for secure communication.</li>
+                </ul>
+            </li>
+            <li><strong>Quantum Sensing and Metrology:</strong> Utilizing quantum phenomena to develop highly sensitive sensors for applications in medicine, environmental monitoring, and fundamental science.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Notable Quantum Computing Startups (Examples):</h2>
+        <p class="text-gray-700 mb-4">While the field is dynamic and new companies emerge regularly, some notable startups making significant contributions include:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li><strong>Hardware Focused:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Rigetti Computing:</strong> Developing superconducting quantum computers and a full-stack platform.</li>
+                    <li><strong>IonQ:</strong>  Building trapped-ion quantum computers with high fidelity and connectivity.</li>
+                    <li><strong>Quantum Circuits, Inc. (QCI):</strong>  Focusing on superconducting quantum computers and related software.</li>
+                    <li><strong>PsiQuantum:</strong>  Taking a photonic approach to building a large-scale quantum computer.</li>
+                    <li><strong>ColdQuanta:</strong>  Developing neutral atom quantum computers and related technologies.</li>
+                </ul>
+            </li>
+            <li><strong>Software and Algorithm Focused:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>Zapata Computing:</strong>  Developing a platform for quantum workflow orchestration and application development.</li>
+                    <li><strong>Classiq:</strong>  Providing a platform for algorithm design and compilation for various quantum hardware.</li>
+                    <li><strong>Cambridge Quantum (Quantinuum):</strong>  A merged entity focusing on both hardware and software, with strong expertise in quantum algorithms and security.</li>
+                    <li><strong>Riverlane:</strong>  Building the operating system for quantum computers.</li>
+                    <li><strong>Q-CTRL:</strong>  Developing quantum control software to improve the performance and stability of qubits.</li>
+                </ul>
+            </li>
+            <li><strong>Applications and Services Focused:</strong>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><strong>GTN (formerly Menten AI):</strong> Applying quantum computing to drug discovery.</li>
+                    <li><strong>Multiverse Computing:</strong> Developing quantum solutions for the financial industry.</li>
+                    <li><strong>Terra Quantum:</strong>  Offering quantum computing services and solutions across various industries.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Challenges and Opportunities:</h2>
+        <p class="text-gray-700 mb-4">These startups face significant challenges, including the technical complexities of building and controlling qubits, the need for robust error correction, and the development of practical applications that demonstrate a clear quantum advantage over classical computers. However, the potential rewards are immense. Successful quantum computing startups are poised to revolutionize numerous industries and solve problems currently intractable for even the most powerful supercomputers.</p>
+
+        <p class="text-gray-700 mb-4">The investment in quantum computing startups is growing, indicating the strong belief in the transformative potential of this technology. As the field matures, we can expect to see further breakthroughs and the emergence of even more innovative companies pushing the frontiers of quantum computation.</p>
     </div>
+    <script>
+        // Toggle mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
